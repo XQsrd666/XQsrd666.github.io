@@ -70,6 +70,28 @@ ninja.data = [{
             window.location.href = "/blog/2025/twostage/";
           
         },
+      },{id: "post-高效声纹识别-cam-的网络设计与应用实践",
+        
+          title: "高效声纹识别——CAM++ 的网络设计与应用实践",
+        
+        description: "CAM++ 通过上下文感知掩码（Context-Aware Masking）与改进的 TDNN 结构，提升了声纹识别系统的判别能力与鲁棒性，在工程应用中表现优异。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/cam++/";
+          
+        },
+      },{id: "post-高效目标检测-yolov8-的架构设计与训练策略",
+        
+          title: "高效目标检测——YOLOv8 的架构设计与训练策略",
+        
+        description: "YOLOv8 作为 YOLO 系列的最新版本，在网络架构与训练方法上进一步优化，兼顾速度、精度与易用性，已成为工业界与学术界的主流检测模型。",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/yolov8/";
+          
+        },
       },{id: "post-目标检测基础-two-stage与one-stage方法",
         
           title: "目标检测基础——Two-Stage与One-Stage方法",
