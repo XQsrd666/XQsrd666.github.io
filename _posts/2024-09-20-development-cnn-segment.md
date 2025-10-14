@@ -28,7 +28,7 @@ categories: 研究笔记
 3. out3 全卷积层映射到样本标记空间，与上一步结果相加 → 最终八倍上采样  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/development-cnn-segment/image-20250904163856107.png" alt="FCN流程图" style="max-width:90%; height:auto;">
+  <img src="/assets/img/blogs/development-cnn-segment/image-20250904163856107.png" alt="FCN流程图" style="max-width:90%; height:auto;" data-zoomable>
 </div>
 
 **特点**：
@@ -49,7 +49,7 @@ SegNet 提出了一个基于 **Encoder-Decoder（编码器-解码器）** 的分
 解码器的核心创新：**记录池化索引位置**，在上采样时使用 Unpooling 代替直接反卷积。  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/development-cnn-segment/image-20250904202323495.png" alt="SegNet架构图" style="max-width:90%; height:auto;">
+  <img src="/assets/img/blogs/development-cnn-segment/image-20250904202323495.png" alt="SegNet架构图" style="max-width:90%; height:auto;" data-zoomable>
 </div>
 
 **特点**：
@@ -71,7 +71,7 @@ U-Net 的设计理念：
 解码器结构：将对应编码器特征层复制并裁剪后与解码器特征拼接，再上采样  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/development-cnn-segment/image-20250904211842570.png" alt="U-Net结构图" style="max-width:90%; height:auto;">
+  <img src="/assets/img/blogs/development-cnn-segment/image-20250904211842570.png" alt="U-Net结构图" style="max-width:90%; height:auto;" data-zoomable>
 </div>
 
 **特点**：
@@ -91,11 +91,11 @@ PSPNet 引入 **Pyramid Scene Parsing Module（金字塔池化模块）**：
 - **解码器**：对 f5 特征层进行多尺度平均池化（1×1、2×2、3×3、6×6） → resize → 拼接 → 卷积 → 全连接  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/development-cnn-segment/image-20250905161010755.png" alt="PSPNet金字塔池化" style="max-width:90%; height:auto;">
+  <img src="/assets/img/blogs/development-cnn-segment/image-20250905161010755.png" alt="PSPNet金字塔池化" style="max-width:90%; height:auto;" data-zoomable>
 </div>
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/development-cnn-segment/image-20250905161050873.png" alt="PSPNet多尺度融合" style="max-width:90%; height:auto;">
+  <img src="/assets/img/blogs/development-cnn-segment/image-20250905161050873.png" alt="PSPNet多尺度融合" style="max-width:90%; height:auto;" data-zoomable>
 </div>
 
 **技术细节**：
@@ -115,7 +115,7 @@ DeepLab 系列进一步提升了分割精度，核心在于：
 - **解码器**：融合低级特征和 ASPP 输出，插值上采样到原始尺寸  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/development-cnn-segment/image-20250905172609520.png" alt="DeepLabV3结构图" style="max-width:90%; height:auto;">
+  <img src="/assets/img/blogs/development-cnn-segment/image-20250905172609520.png" alt="DeepLabV3结构图" style="max-width:90%; height:auto;" data-zoomable>
 </div>
 
 **特点**：

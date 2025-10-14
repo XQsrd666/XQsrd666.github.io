@@ -50,7 +50,7 @@ related_publications: false
 </div>
 
     拍到了壁纸里会见到的雪山
-    （叽咪拍的这个背景好有内味儿）
+    （叽咪拍的这个背影好有内味儿）
     
 <div class="gallery-grid">
   {% for i in (9..11) %}

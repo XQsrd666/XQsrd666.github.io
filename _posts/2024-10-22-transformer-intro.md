@@ -27,7 +27,7 @@ Transformer 最早由 [Attention is All You Need, 2017] 提出，用于机器翻
 整体结构由 **编码器（Encoder）** 和 **解码器（Decoder）** 组成：  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-intro/Transformer_full_architecture.png" alt="Transformer整体架构" style="max-width:90%; height:auto;">
+  <img src="/assets/img/blogs/transformer-intro/Transformer_full_architecture.png" alt="Transformer整体架构" style="max-width:90%; height:auto;" data-zoomable>
 </div>
 
 ---
@@ -86,7 +86,7 @@ $$
 - 最后拼接所有子结果。  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-intro/image-20250908170117006.png" alt="多头注意力示意图" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/transformer-intro/image-20250908170117006.png" alt="多头注意力示意图" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 这样可以让模型从不同角度捕捉依赖关系，提升表达能力。

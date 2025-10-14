@@ -22,7 +22,7 @@ categories: 研究笔记
 在 ViT 编码器基础上，SETR 提出三种解码器策略：
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-segment/image-20250909173759174.png" alt="SETR结构" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/transformer-segment/image-20250909173759174.png" alt="SETR结构" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 1. **双线性插值**：简单上采样恢复分辨率  
@@ -37,7 +37,7 @@ categories: 研究笔记
 #### **📌 Segmenter**
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-segment/Segmenter.png" alt="Segmenter结构" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/transformer-segment/Segmenter.png" alt="Segmenter结构" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 - 编码器同 SETR，使用 ViT  
@@ -51,7 +51,7 @@ categories: 研究笔记
 #### **📌 SegFormer：简单高效的 Transformer 分割设计**
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-segment/Segformer.png" alt="SegFormer结构" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/transformer-segment/Segformer.png" alt="SegFormer结构" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 - 层次化 Transformer 编码器输出 **多尺度特征**  
@@ -96,7 +96,7 @@ categories: 研究笔记
 #### **📌 实例分割 MaskFormer**
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-segment/MaskFormer.jpg" alt="MaskFormer结构" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/transformer-segment/MaskFormer.jpg" alt="MaskFormer结构" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 - **传统方法**：像素级预测 → 连通区域聚类 → 掩码生成  
@@ -117,7 +117,7 @@ categories: 研究笔记
 #### **📌 Mask2Former**
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-segment/Mask2Former.png" alt="Mask2Former结构" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/transformer-segment/Mask2Former.png" alt="Mask2Former结构" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 - 基础结构不变，Transformer decoder 优化三方面：  

@@ -15,14 +15,20 @@ tags: [云-边协作, 音视频多模态, 实时定位, 可视化执法]
 {% assign folder_name = page.path | split: '/' | last | split: '.' | first %}
 {% assign img_dir = 'assets/img/projects/work/' | append: folder_name %}
 
-<!-- 概览 -->
+<!-- 项目概览 -->
 <div class="row mb-4">
   <div class="col-12">
     <p class="lead mb-4">
-      本项目与成都市交通管理局合作，面向城市道路“飙车/炸街”问题，
-      设计低成本、高覆盖、可落地的 <b>云-边协作监测系统</b>，
-      通过音视频多模态融合实现实时检测、车辆定位与证据打包导出，
-      已在 5 个试点点位部署并中试。
+      本项目与<strong>成都市交通管理局</strong>合作，旨在解决城市道路"飙车/炸街"这一严重影响公共安全的问题。核心创新在于<strong>基于云-边协作架构，结合音视频多模态AI技术</strong>，实现低成本、高覆盖的炸街事件实时检测、精准定位与执法取证。
+    </p>
+    <p>我的核心工作聚焦于三个关键技术环节：</p>
+    <ul>
+      <li><strong>云-边协同检测架构设计：</strong>构建Jetson边缘端与云端推理的协同框架，边缘端负责RTSP采集、音频初筛与轻量视觉检测，云端进行深度学习精判与多模态融合分析，实现高效能计算资源分配。</li>
+      <li><strong>音视频多模态融合算法：</strong>采用传统音频分析进行音频初筛，结合MFCC/Melspectrogram特征增强与CAM++/ECAPA-TDNN stacking模型，提升炸街识别的准确性与鲁棒性。</li>
+      <li><strong>精准定位与可视化执法系统：</strong>基于TDOA声源定位技术与视觉目标跟踪，结合音视一致性对齐算法，实现炸街车辆的精准定位，并通过Django+Vue.js构建完整的可视化执法支持平台。</li>
+    </ul>
+    <p>
+      该系统已在成都5个重点路段部署试点，累计检测炸街事件<strong>2098起</strong>，实现云端炸街判别准确率<strong>98.4%</strong>，车牌识别准确率<strong>99.5%</strong>，为交通噪音治理提供了智能化解决方案。
     </p>
   </div>
 </div>
@@ -42,22 +48,6 @@ tags: [云-边协作, 音视频多模态, 实时定位, 可视化执法]
       </div>
     </div>
   {% endfor %}
-</div>
-
-<hr>
-
-<!-- 我的角色 -->
-<div class="row mb-4">
-  <div class="col-12">
-    <h3>我的角色与主要贡献</h3>
-    <ul>
-      <li><strong>系统架构与系统集成：</strong>负责云-边协作设计、点位接入规范与整体部署策略（Jetson 边缘 + 云端推理）。</li>
-      <li><strong>音频检测与建模：</strong>设计双门限短时能量策略、频域区间 + 峰度判别；使用 MFCC / Melspectrogram + SpecAug / speed-perturb 数据增强，基于 CAM++ 与 ECAPA-TDNN 的 stacking 提升音频判别鲁棒性。</li>
-      <li><strong>视觉链路与车牌识别：</strong>部署 YOLOv8 作为目标过滤，结合光流速度过滤与速度阈值判断疑似炸街车辆，使用 CRNN/LPRNet 做车牌识别并入库。</li>
-      <li><strong>多模态定位：</strong>基于 TDOA（GCC-PHAT / GCC-PATH）与蜂鸣器校准的时差校准，实现车道概率分布的车道判断；采用音视一致性（AVC）+ CAM 进行音视对齐，多声源下引入类激活图做精确匹配。</li>
-      <li><strong>前端与可视化：</strong>基于Django + Vue.js 构建交互看板：地图为主视图（点位模式 / 热力图）、事件列表、证据回放与导出，支持多维检索。</li>
-    </ul>
-  </div>
 </div>
 
 <hr>
@@ -221,7 +211,7 @@ tags: [云-边协作, 音视频多模态, 实时定位, 可视化执法]
 
 <hr>
 <!-- 量化结果 -->
-<div class="row mb-4">
+<!-- <div class="row mb-4">
   <div class="col-12">
     <h3>量化结果（试点实测）</h3>
     <ul>
@@ -238,7 +228,7 @@ tags: [云-边协作, 音视频多模态, 实时定位, 可视化执法]
 </div>
 
 
-<hr>
+<hr> -->
 
 <!-- 结论与下一步 -->
 <div class="row mb-4">

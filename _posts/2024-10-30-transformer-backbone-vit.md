@@ -21,7 +21,7 @@ categories: 研究笔记
 核心思想：**将图像划分为小块（Patch）**，每个小块视作“单词”，整个图像看作一个由 Patch 组成的序列，通过 Transformer 编码器进行处理。
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/transformer-backbone-vit/image-20250909163833271.png" alt="ViT结构示意图" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/transformer-backbone-vit/image-20250909163833271.png" alt="ViT结构示意图" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 主要操作流程如下：

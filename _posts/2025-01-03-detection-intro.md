@@ -47,7 +47,7 @@ categories: 研究笔记
    - 通过 NMS（非极大值抑制）得到最终检测结果  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/detection-intro/sliding_window.jpeg" alt="滑动窗口法" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/detection-intro/sliding_window.jpeg" alt="滑动窗口法" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 2. **选择性搜索（Selective Search）**  
@@ -56,7 +56,7 @@ categories: 研究笔记
    - 最终生成一组感兴趣区域（ROI）  
 
 <div style="text-align:center">
-  <img src="/assets/img/blogs/detection-intro/selective_search.jpeg" alt="选择性搜索" style="max-width:85%; height:auto;">
+  <img src="/assets/img/blogs/detection-intro/selective_search.jpeg" alt="选择性搜索" style="max-width:85%; height:auto;" data-zoomable>
 </div>
 
 3. **区域提议网络（RPN, Region Proposal Network）**  
